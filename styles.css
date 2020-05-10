@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+}
+.main-body {
+  height: 100%;
+  width: 100%;
+  background-color: #c57651;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dot {
+  background: linear-gradient(45deg, #fff 50%, #000 50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dot-1 {
+  height: 90px;
+  width: 90px;
+  animation: dotanim1 2s ease-in-out infinite alternate;
+  -webkit-animation: dotanim1 2s ease-in-out infinite alternate;
+  animation-delay: 1s;
+}
+.dot-2 {
+  height: 70px;
+  width: 70px;
+  animation: dotanim2 2s ease-in-out infinite alternate;
+  -webkit-animation: dotanim2 2s linear infinite alternate;
+  animation-delay: 1s;
+}
+.dot-3 {
+  height: 50px;
+  width: 50px;
+  animation: dotanim3 2s ease-in-out infinite alternate;
+  -webkit-animation: dotanim3 2s linear infinite alternate;
+  animation-delay: 1s;
+}
+@keyframes dotanim1 {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  30% {
+    height: 90px;
+    width: 90px;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+@keyframes dotanim2 {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  60% {
+    height: 70px;
+    width: 70px;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+@keyframes dotanim3 {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  90% {
+    height: 50px;
+    width: 50px;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
